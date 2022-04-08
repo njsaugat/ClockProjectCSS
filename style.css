@@ -1,0 +1,90 @@
+/*
+major learnings were::
+
+percentage are hell lot useful when we just 
+trynna do some estimates
+vh and vw are great but with % we get a certain estimate 
+
+the next thing that I learnt was to use 
+position like absolute, relative, sticky, etc
+
+
+and the other one is transform origin 
+helps decide from where to rotate certain stuff
+
+
+
+*/
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 60vw;
+}
+
+.clock{
+    /* align-self: centers; */
+    /* display: flex;
+    justify-content: center; */
+    /* border: 1px solid gray; */
+    /* background-image: url('clock.png')  ; */
+    /* background-repeat:no-repeat; */
+    background: url('clock.png') no-repeat  ;
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position:relative
+}
+
+.hour,.minute,.second{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.hour{
+    /* position:fixed;
+    top: auto;
+    background-color: black;
+    width: 1vw;
+    height: 9.5vh;
+    /* margin-left: 14.4vh;
+    margin-top: 5vh; */
+    /* border-radius: 0.5vh; */ 
+
+    /* position: fixed; */
+    top: 24%;
+    left: 48.5%;
+    /* background-color: black; */
+    width: 3%;
+    height: 24%;
+    border-radius: 0.5vh;
+    /* opacity: 0.7; */
+    /* display: none; */
+}
+
+.minute{
+    top: 15%;
+    left: 48.5%;
+    /* background-color: black; */
+    width: 2.6%;
+    height: 33%;
+    border-radius: 0.5vh;
+    /* opacity: 0.7; */
+    /* display: none */
+
+}
+
+.second{
+    /* background-color: red; */
+    top: 19%;
+    left: 49.5%;
+    /* background-color: black; */
+    width: 1%;
+    height: 29%;
+    border-radius: 0.5vh;
+}
